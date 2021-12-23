@@ -2,22 +2,19 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Home from "./componant/Home";
-import SignIn from "./componant/SignIn";
-import About from "./componant/About";
+import Dashboardbootstraps from "./bootstrap/Dashboard.js";
+import Taiwindform from "./componant/Taiwindform";
+import Muidashboard from "./mui/Dashboard";
+
 function App() {
   return (
-
     <div className="container-fluid">
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/SignIn" element={<SignIn />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/" element={<Dashboardbootstraps />} />
+        <Route path="/tailwind" element={<Taiwindform />} />
+        <Route path="/mui" element={<Muidashboard />} />
       </Routes>
-
     </div>
-
   );
 }
 
